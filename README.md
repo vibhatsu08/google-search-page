@@ -1,5 +1,5 @@
 # google-search-page
-View the project <a href="">here</a>
+View the project <a href="https://vibhatsu08.github.io/google-search-page/">here</a>
 
 Title - Google Search Page (Clone)
 
