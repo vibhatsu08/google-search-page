@@ -5,7 +5,108 @@
     padding: 0;
 }
 
+:root {
+    --bodyBgColor: rgb(32, 33, 36);
+    --headerLinksColor: rgb(232, 234, 237);
+    --searchBarBorderColor: rgb(148, 152, 156);
+    --searchBarHoverBgColor: rgb(48, 48, 51);
+    --buttonsBgColor: rgb(48, 48, 51);
+    --buttonsColor: rgb(232, 234, 237);
+    --footerLinksColor: rgb(148, 152, 156);
+    --footerBgColor: rgb(23, 23, 23);
+}
+
+/* icons */
+/* for app icon and share icon */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 40
+}
+/* for search icon */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--bodyBgColor);
 }
+#header-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+}
+#header-links > a {
+    color: var(--headerLinksColor);
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.header-links-link {
+    text-decoration: none;
+}
+.header-links-link:hover {
+    text-decoration: underline;
+}
+#profile-icon {
+    width: 30px;
+    border-radius: 10000px;
+}
+
+#search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+#search-bar-container > #logo-container > #google-logo {
+    width: 500px;
+}
+#share-icon {
+    text-decoration: none;
+    background-color: var(--buttonsBgColor);
+    color: var(--buttonsColor);
+    padding: 5px;
+    border-radius: 5px;
+}
+#search-field span {
+    position: absolute;
+    display: flex;
+}
+#search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+#search-bar {
+    border: none;
+    outline: none;
+    width: 40vw;
+    background-color: inherit;
+    border: 1px solid var(--searchBarBorderColor);
+    font-size: 1.2rem;
+    color: var(--buttonsColor);
+    padding: 10px 20px;
+    border-radius: 10000px;
+    margin-top: 3vh;
+}
+#search-bar:hover, #search-bar:focus {
+    background-color: var(--searchBarHoverBgColor);
+    border: 1px solid var(--searchBarHoverBgColor);
+}
+
+
 
